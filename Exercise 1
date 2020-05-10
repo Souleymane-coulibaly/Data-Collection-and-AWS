@@ -1,0 +1,149 @@
+#!/usr/bin/env python
+# coding: utf-8
+
+# In[1]:
+
+
+import numpy as np
+
+
+# In[2]:
+
+
+age  = np.array([20,18,29,27])
+
+
+# In[3]:
+
+
+#calculc de l'age moyen
+np.mean(age)
+
+
+# In[4]:
+
+
+np.array([4,2])
+
+
+# In[5]:
+
+
+X = np.array([1,2,5])
+
+
+# In[6]:
+
+
+print(X)
+
+
+# In[8]:
+
+
+Y = np.array(([1,8,0],[3,8,9]))
+
+
+# In[9]:
+
+
+print(Y)
+
+
+# In[11]:
+
+
+Z = X*Y
+print(Z)
+
+
+# In[14]:
+
+
+print(Z.shape)
+
+
+# In[15]:
+
+
+Etudiant = np.array((['Souleymane', 'Aboubacar','Ibrahim','Fatou']))
+
+
+# In[16]:
+
+
+print(Etudiant)
+
+
+# In[18]:
+
+
+liste_boisson = np.genfromtxt("world_alcohol.csv", delimiter=",")
+
+
+# In[19]:
+
+
+print(liste_boisson)
+
+
+# In[34]:
+
+
+liste_boisson = np.genfromtxt("world_alcohol.csv", delimiter=";", dtype="U75", skip_header = 1)
+
+
+# In[35]:
+
+
+print(liste_boisson)
+
+
+# In[37]:
+
+
+Année = liste_boisson[2]
+Année[2]
+
+
+# In[38]:
+
+
+liste_boisson.shape
+
+
+# In[41]:
+
+
+liste_boisson[0]
+
+
+# In[42]:
+
+
+liste_boisson.dtype
+
+
+# In[45]:
+
+
+Variation = np.arange(12,90,4)
+
+Variation
+# In[46]:
+
+
+Variation
+
+
+# In[50]:
+
+
+np.mean(Variation)
+
+
+# In[ ]:
+
+
+
+
