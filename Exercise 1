@@ -9,6 +9,7 @@ import numpy as np
 
 # In[2]:
 
+# Création Tableau d'age 
 
 age  = np.array([20,18,29,27])
 
@@ -22,74 +23,79 @@ np.mean(age)
 
 # In[4]:
 
+# Création d'un Vecteur à 2 colonnes
 
 np.array([4,2])
 
 
 # In[5]:
 
+# Création d'un Vecteur à 3 colonnes
 
 X = np.array([1,2,5])
 
 
 # In[6]:
 
-
+#Affichage Vecteur X
 print(X)
 
 
 # In[8]:
 
+#Création Matrice Y 2 ligne 3 Colonnes 
 
 Y = np.array(([1,8,0],[3,8,9]))
 
 
 # In[9]:
 
-
+#Affichage Matrice Y
 print(Y)
 
 
 # In[11]:
-
+# Calcul produit Z (d'un matrice et une ligne)
 
 Z = X*Y
+# Affichage Produit Z
 print(Z)
 
 
 # In[14]:
 
+#Affichage de la longueur du tableau Z
 
 print(Z.shape)
 
 
 # In[15]:
-
+# Création Liste Etudiants
 
 Etudiant = np.array((['Souleymane', 'Aboubacar','Ibrahim','Fatou']))
 
 
 # In[16]:
 
-
+# Affichage Liste Etudiants
 print(Etudiant)
 
 
 # In[18]:
 
-
-liste_boisson = np.genfromtxt("world_alcohol.csv", delimiter=",")
+# Import datasert .csv 
+liste_boisson = np.genfromtxt("world_alcohol.csv", delimiter=";")
 
 
 # In[19]:
 
-
+#Affichage Liste 
 print(liste_boisson)
 
 
 # In[34]:
 
-
+# Nettoyage Liste "Suppression entete" et dtype
 liste_boisson = np.genfromtxt("world_alcohol.csv", delimiter=";", dtype="U75", skip_header = 1)
 
 
@@ -129,20 +135,6 @@ liste_boisson.dtype
 
 Variation = np.arange(12,90,4)
 
-Variation
-# In[46]:
-
-
-Variation
-
-
-# In[50]:
-
-
-np.mean(Variation)
-
-
-# In[ ]:
 
 
 
